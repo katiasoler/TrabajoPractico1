@@ -6,6 +6,52 @@
     <title>Contactos</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Página de contacto</h1>
+        <p>Si tenes alguna pregunta, comentario o deseas más información sobre 
+            nuestras actividades y campañas, te invitamos a llenar el formulario 
+            de contacto a continuación.</p>
+        <form>
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" id="nombre" required placeholder="Juan">
+            <br><br>
+            <label for="apellido">Escribe tu apellido:</label>
+            <input type="text" id="apellido" required placeholder="Perez">
+            <br><br>
+            <label for="email">Escribe tu email:</label>
+            <input type="email" id="email" required placeholder="juan.perez@example.com">
+            <br><br>
+            <label for="pais">País:</label>
+            <select id="pais">
+                <option value="">Selecciona tu país</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="paraguay">Paraguay</option>
+            </select>
+            <br><br>
+            <label for="Fecha">Tu cumpleaños:</label>
+            <input type="date" id="Fecha" value="" min="1950-01-01" max="2030-12-31">
+            <br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
