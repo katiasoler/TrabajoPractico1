@@ -1,3 +1,7 @@
+/*Fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 /* Variables */
 :root {
     --verde-oscuro:#1B4332;
@@ -19,11 +23,6 @@ nav {
     padding: 1em;
     margin-bottom: 1.5em;
     position:sticky;
-<<<<<<< HEAD
-=======
-    top: 0;
-
->>>>>>> 9bdf590b11a18895f52af86b133c91828c02eeea
 }
 nav a, footer a {
     color: var(--blanco);
@@ -55,4 +54,11 @@ footer {
     text-align: center;
     padding: 1em;
     margin-top: 2em;
+}
+
+.Formulario h1, h2, p, label{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
