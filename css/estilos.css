@@ -19,6 +19,11 @@ nav {
     padding: 1em;
     margin-bottom: 1.5em;
     position:sticky;
+<<<<<<< HEAD
+=======
+    top: 0;
+
+>>>>>>> 9bdf590b11a18895f52af86b133c91828c02eeea
 }
 nav a, footer a {
     color: var(--blanco);
