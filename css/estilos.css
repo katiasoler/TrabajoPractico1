@@ -1,0 +1,42 @@
+--/* Variables */
+:root {
+    --verde-oscuro:#1B4332;
+    --verde-medio:#2D6A4F;
+    --verde-claro:#4CAF50;
+    --blanco:#FFFFFF
+
+}
+--/* Navegación */
+nav {
+    background-color: var(--verde-medio);
+    padding: 1em;
+    margin-bottom: 1.5em;
+    position:sticky;
+
+}
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    margin: 0 1.25em;
+    padding:0.5em;
+}
+nav a:hover {
+    color: var(--verde-oscuro);
+    text-decoration: underline;
+}
+--/* Header */
+header{
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 1.5em;
+    margin: 2em 0;
+    text-align: center;
+}
+--/* Footer */
+footer {
+    background-color: var(--verde-medio);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
