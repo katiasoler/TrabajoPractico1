@@ -136,7 +136,7 @@ form{
     background-color: rgb(126, 197, 220);
     padding: 25px;
     border-radius: 5px;
-    position: relative
+    margin: 1em;
 }
 
 form input {
