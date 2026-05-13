@@ -126,6 +126,35 @@ video {
     margin-top: 1em;
 }
 
+form{
+    background-color: rgb(126, 197, 220);
+    padding: 25px;
+    border-radius: 5px;
+    position: relative
+}
+
+form input {
+    padding: 12px 0px 12px 20px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 15px;
+}
+
+form button{
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+form button:hover{
+    background-color: var(--verde-clarito);
+    color: black
+}
+
 table{
     border-collapse: collapse;
     font-family: "Rubik", sans-serif;
