@@ -1,13 +1,11 @@
-/*Fuentes*/
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 /* Variables */
 :root {
     --verde-oscuro:#1B4332;
     --verde-medio:#2D6A4F;
     --verde-claro:#4CAF50;
     --blanco:#FFFFFF;
+    --color-h1: #410a4c;
+    --color-h2: #196e6a;
 }
 /* Reset */
 /*
@@ -22,7 +20,11 @@ nav {
     background-color: var(--verde-medio);
     padding: 1em;
     margin-bottom: 1.5em;
-    position:sticky;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    width: 100%;
+    height: 30px;
 }
 nav a, footer a {
     color: var(--blanco);
@@ -39,13 +41,26 @@ header{
     background-color: var(--verde-oscuro);
     color: var(--blanco);
     padding: 1.5em;
-    margin: 2em 0;
+    margin:2em 0;
     text-align: center;
 }
 header img{
     width: 400px;
     height: 200px;
     border: black solid 2px;
+}
+/*body*/
+body{
+    margin-top: 30px;
+    font-size: 1rem;
+}
+h1{
+    font-size: larger;
+    color: var(--color-h1);
+}
+h2{
+    font-size: 18px;
+    color: var(--color-h2);
 }
 /* Footer */
 footer {
