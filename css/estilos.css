@@ -19,10 +19,12 @@
 nav {
     background-color: var(--verde-medio);
     padding: 1em;
-    margin: 1em auto;
+    margin: 0 -200px;
     top: 0;
-    width: 100%;
+    width: 110%;
     position:fixed;
+    z-index: 1000;
+    border: none;
 }
 
 nav a,
