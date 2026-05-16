@@ -46,14 +46,14 @@ header a:hover {
 /* Header */
 header {
     background-color: var(--verde-oscuro);
-    color: var(--blanco);
     padding: 1.5em;
     margin:5em 0;
     text-align: center;
+    border-radius: 10px;
 }
 
 header img {
-    width: 400px;
+    width: 300px;
     max-width: 100%;
 
     border-radius: 12px;
@@ -66,6 +66,7 @@ header img {
 body {
     width: 85%;
     margin: auto;
+    background-color: antiquewhite;
 }
 /* Footer */
 footer {
@@ -104,7 +105,6 @@ section,
     padding: 2em;
     margin-bottom: 2em;
     border-radius: 12px;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -135,10 +135,11 @@ video {
 
 /* Formulario */
 form{
-    background-color: rgb(126, 197, 220);
+    background-color: var(--verde-oscuro);
     padding: 25px;
     border-radius: 5px;
     margin: 1em;
+    color: var(--blanco);
 }
 
 form input {
@@ -160,7 +161,7 @@ form button{
 
 form button:hover{
     background-color: var(--verde-clarito);
-    color: black
+    color: black;
 }
 /* Mapa */
 iframe {
