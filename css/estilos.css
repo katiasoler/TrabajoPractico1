@@ -151,7 +151,7 @@ form input {
 }
 
 form button{
-    background-color: var(--verde-oscuro);
+    background-color: darkblue;
     color: var(--blanco);
     border: none;
     padding: 12px 20px;
