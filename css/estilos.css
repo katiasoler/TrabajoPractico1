@@ -68,6 +68,10 @@ body {
     width: 85%;
     margin: auto;
     background-color: antiquewhite;
+   
+}
+body img {
+    max-width: 100%;
 }
 /* Footer */
 footer {
