@@ -42,7 +42,7 @@ header a:hover {
     color: var(--verde-oscuro);
     text-decoration: underline;
 }
-
+/*Navegacion Boostrap*/
 .navbar-brand {
     padding: 0;
     margin: 0;
@@ -53,6 +53,7 @@ header a:hover {
     height: 45px;
     width: auto;
     margin-bottom: 1em;
+    position: absolute;
    
 }
 .nav-link{
@@ -71,7 +72,7 @@ header {
 }
 
 
-/*Hero*/
+/*Hero Boostrap*/
 
 .hero{
   position: relative;
@@ -102,12 +103,17 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
 }
-/* Tarjetas*/
+/* Tarjetas Boostrap*/
 .card {
     border: solid var(--verde-clarito);
     border-radius: 15px;
     overflow: hidden;
     transition: 0.3s;
+    display: flex;
+    flex: 1 1 2em;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
 }
 
 .card:hover {
@@ -136,6 +142,7 @@ footer a:hover{
     color: var(--verde-claro);
     text-decoration: underline;
 }
+/*Formulario, titulos, links y parrafos general*/
 .Formulario h1,
 h2,
 p,
