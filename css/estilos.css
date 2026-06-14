@@ -17,24 +17,21 @@
 
 /* Navegación */
 nav {
-    background-color: var(--verde-medio);
-    padding: 10px;
+    background-color: var(--verde-oscuro);
+    padding: 1em;
     top: 0;
     width: 100%;
-    position:fixed;
     left:0;
     right:0;
     z-index: 1000;
     border: none;
     display: flex;
     align-items: center;
-    border-radius: 10px;
 }
-
-nav a,
+.navbar a,
 footer a,
 header a {
-    color: var(--verde-clarito);
+    color: var(--verde-claro);
     text-decoration: none;
     margin: 0 1.25em;
     padding: 0.5em;
@@ -66,7 +63,7 @@ header a:hover {
 /* Header */
 header {
     background-color: var(--verde-oscuro);
-    padding: 1em;
+    padding: 2em;
     margin:2em 0;
     text-align: center;
     border-radius: 10px;
