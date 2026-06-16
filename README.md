@@ -15,6 +15,8 @@ El sitio está compuesto por las siguientes páginas:
 
 ## 🛠️ Tecnologías utilizadas
 - HTML5
+- CSS pernolizado 
+- BOOTSTRAP 
 
 ---
 
@@ -37,4 +39,4 @@ Este trabajo tiene fines educativos y simula una ONG real, con el objetivo de ge
 ---
 
 ## 🚧 Estado del proyecto
-En desarrollo. Se planea incorporar estilos con CSS y mejoras en la experiencia de usuario en futuras etapas.
+Finalizado. Se aplicaron todos los conocimientos adquiridos en la materia con html y css.
