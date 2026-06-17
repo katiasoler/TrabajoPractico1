@@ -1,14 +1,15 @@
 /* Variables */
 :root {
-    --verde-oscuro:#1B4332;
-    --verde-medio:#2D6A4F;
-    --verde-claro:#4CAF50;
-    --verde-clarito:#ace4a7;;
-    --blanco:#FFFFFF;
+    --verde-oscuro: #1B4332;
+    --verde-medio: #2D6A4F;
+    --verde-claro: #4CAF50;
+    --verde-clarito: #ace4a7;
+    ;
+    --blanco: #FFFFFF;
 }
 
 /* Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,13 +22,14 @@ nav {
     padding: 1em;
     top: 0;
     width: 100%;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     border: none;
     display: flex;
     align-items: center;
 }
+
 .navbar a,
 footer a,
 header a {
@@ -36,12 +38,13 @@ header a {
     margin: 0 1.25em;
     padding: 0.5em;
 }
- 
+
 nav a:hover,
 header a:hover {
     color: var(--verde-oscuro);
     text-decoration: underline;
 }
+
 /*Navegacion Boostrap*/
 .navbar-brand {
     padding: 0;
@@ -49,14 +52,15 @@ header a:hover {
     display: flex;
     align-items: center;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     height: 50px;
     width: auto;
     position: absolute;
-   
+
 }
 
-.nav-link{
+.nav-link {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
     margin: 0 10px;
@@ -64,7 +68,7 @@ header a:hover {
 
 
 /*hero*/
-.hero{
+.hero {
     background-image: url(../iconos/heroimagen.jpeg);
     width: 100%;
     background-repeat: no-repeat;
@@ -76,7 +80,7 @@ header a:hover {
     position: relative;
 }
 
-.hero-container{
+.hero-container {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -98,12 +102,19 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
 }
+
 body img {
     max-width: 100%;
     align-items: center;
 }
+
 /* Titulos */
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
 }
@@ -135,6 +146,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bold;
     margin-bottom: 15px;
 }
+
 /* Footer */
 footer {
     background-color: var(--verde-oscuro);
@@ -144,12 +156,14 @@ footer {
     margin-top: 2em;
     border-radius: 10px;
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--verde-claro);
     text-decoration: underline;
 }
+
 /*Formulario, titulos, links y parrafos general*/
-.Formulario h1,
+.formulario h1,
 h2,
 p,
 label {
@@ -171,8 +185,8 @@ a:hover {
     opacity: 0.8;
 }
 
-section, 
-.Formulario {
+section,
+.formulario {
     background-color: white;
     padding: 2.5em;
     margin-bottom: 2em;
@@ -190,16 +204,19 @@ h2 {
     border-left: 6px solid var(--verde-claro);
     padding-left: 0.5em;
 }
-h3{
+
+h3 {
     color: var(--verde-blanco);
     text-align: center;
     font-size: 2em;
 }
-h4{
+
+h4 {
     color: var(--verde-oscuro);
     font-size: 1.7em;
     text-align: center;
 }
+
 /* Listas */
 p,
 li,
@@ -207,7 +224,8 @@ dd,
 dl {
     line-height: 1.7;
     margin: 1em;
-    font-family: "Inter", sans-serif; ;
+    font-family: "Inter", sans-serif;
+    ;
 }
 
 /* Video */
@@ -218,7 +236,7 @@ video {
 }
 
 /* Formulario */
-form{
+form {
     background-color: var(--verde-oscuro);
     padding: 3.5em;
     border-radius: 5px;
@@ -226,7 +244,7 @@ form{
     color: var(--blanco);
     text-align: center;
     justify-content: center;
-   
+
 }
 
 form input,
@@ -242,7 +260,7 @@ form select {
     margin-bottom: 15px;
 }
 
-form button{
+form button {
     background-color: var(--verde-medio);
     color: var(--blanco);
     margin: 1em;
@@ -253,10 +271,11 @@ form button{
     border-radius: 30px;
 }
 
-form button:hover{
+form button:hover {
     background-color: var(--verde-clarito);
     color: black;
 }
+
 /* Mapa */
 iframe {
     display: flex;
@@ -267,33 +286,34 @@ iframe {
     max-width: 100%;
     border-radius: 15px;
 }
+
 /* Tabla */
-table{
+table {
     border-collapse: collapse;
     font-family: "Inter", sans-serif;
     margin: auto;
     padding: auto;
     max-width: 100%;
+    text-align: center;
+    cursor: default;
 }
 
 table,
 th,
-td{
+td {
     border: double 4px;
     border-color: var(--verde-medio)
-
-
 }
 
-th{
+th {
     height: 2rem;
 }
 
-td{
+td {
     padding: 1em;
 }
 
-tbody > tr:hover{
+tbody>tr:hover {
     background-color: var(--verde-clarito);
-    font-weight: bolder;
+    color: var(--verde-oscuro);
 }
