@@ -36,7 +36,7 @@ header a {
     margin: 0 1.25em;
     padding: 0.5em;
 }
-
+ 
 nav a:hover,
 header a:hover {
     color: var(--verde-oscuro);
@@ -107,6 +107,8 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
 }
+
+
 /* Tarjetas Boostrap*/
 .card {
     border: solid var(--verde-clarito);
