@@ -34,7 +34,7 @@
 <body>
     <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="container-fluid">
 
                 <!-- Logo -->
@@ -77,8 +77,9 @@
 
     </header>
     <!-- HERO -->
+     
     <div class="hero text-center py-5">
-
+        
         <div class="container py-5">
 
             <h1 class="display-3">
@@ -95,6 +96,7 @@
 
         </div>
     </div>
+    
     <main>
         <section id="bienvenida">
             <h2>Bienvenidos</h2>
@@ -270,6 +272,52 @@
 
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+    <!-- MODAL NEWSLETTER -->
+     <div class="modal fade" id="newsletterModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    📩 Sumate a Nueva Esperanza
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body text-center">
+
+                <p>
+                   📢 Recibí novedades sobre voluntariados,
+                    programas solidarios, talleres y campañas.
+                </p>
+
+                <form id="form-newsletter">
+
+                    <input
+                        type="email"
+                        id="email-newsletter"
+                        class="form-control mb-3"
+                        placeholder="Tu correo electrónico">
+
+                    <p id="msg-newsletter"></p>
+
+                    <button
+                        type="submit"
+                        class="btn btn-success">
+                        Quiero recibir novedades!
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
     <!-- JavaScript propio -->
      <script src="js/main.js"></script>
