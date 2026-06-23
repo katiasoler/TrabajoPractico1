@@ -28,12 +28,12 @@ formNewsletter.addEventListener("submit", (e) => {
 
     if (email.length < 4 || !email.includes("@")) {
         msgNewsletter.textContent = "Por favor ingresá un email válido.";
-        msgNewsletter.style.color = "#B71C1C";
+        msgNewsletter.style.color = "#e04545";
         return;
     }
 
     msgNewsletter.textContent = `¡Gracias! Vas a recibir noticias en ${email}.`;
-    msgNewsletter.style.color = "#1A6B2A";
+    msgNewsletter.style.color = "#57db74";
 
     inputEmail.value = "";
 });
