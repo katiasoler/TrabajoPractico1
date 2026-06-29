@@ -69,6 +69,19 @@
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
 
+                        <li class="nav-item">
+                            <button id="themeToggle" class="btn btn-outline-secondary theme-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-moon">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008" />
+                                </svg>
+                            </button>
+                        </li>
+
                     </ul>
                 </div>
 
@@ -77,18 +90,18 @@
 
     </header>
     <!-- HERO -->
-     
+
     <div class="hero text-center py-5">
-        
+
         <div class="container py-5">
 
             <h1 class="display-3">
                 Bienvenidos a Nueva Esperanza
             </h1>
 
-            <p class="lead mb-4">
-                <strong>"Construyendo inclusión, generando oportunidades"</strong>
-            </p>
+            <h6 class="lead mb-4">
+                "Construyendo inclusión, generando oportunidades"
+            </h6>
 
             <a href="contacto.html" class="btn btn-success btn-lg px-5">
                 ¡Formá parte del cambio!
@@ -96,7 +109,7 @@
 
         </div>
     </div>
-    
+
     <main>
         <section id="bienvenida">
             <h2>Bienvenidos</h2>
@@ -122,7 +135,7 @@
                             alt="Personas recibiendo viandas de comida">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Programa de Comida Solidaria</h5>
-                            <p>Ofrecemos viandas de comida en horarios estratégicos.</p>
+                            <h6>Ofrecemos viandas de comida en horarios estratégicos.</h6>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -130,7 +143,7 @@
                             alt="Personas recibiendo ayuda para encontrar trabajo">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Programa de Puente al Trabajo</h5>
-                            <p>Ofrecemos talleres y orientación vocacional, para ayudar a encontrar un trabajo.</p>
+                            <h6>Ofrecemos talleres y orientación vocacional, para ayudar a encontrar un trabajo.</h6>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -138,7 +151,7 @@
                             alt="Personas recibiendo abrigo y un lugar seguro">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Programa de Refugio y Contención</h5>
-                            <p>Ofrecemos un espacio seguro a personas en situación de calle.</p>
+                            <h6>Ofrecemos un espacio seguro a personas en situación de calle.</h6>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -146,7 +159,7 @@
                             alt="Personas ayuda psicologica y medica">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Programa de Rehabilitación Integral</h5>
-                            <p>Ofrecemos acompañamiento psicológico, médico y social.</p>
+                            <h6>Ofrecemos acompañamiento psicológico, médico y social.</h6>
                         </div>
                     </div>
                 </div>
@@ -250,7 +263,7 @@
     <footer>
         <h3>Nueva Esperanza</h3>
         <p><em>Construyendo inclusión, generando oportunidades</em></p>
-        <p>¡Tu ayuda hoy puede ser el futuro de alguien mañana!</p>
+        <h6>¡Tu ayuda hoy puede ser el futuro de alguien mañana!</h6>
         <address>
             <a href="tel:+1123457869">+ 11 2345 7869</a> |
             <a href="mailto:info@nuevaesperanza.org">info@nuevaesperanza.org</a> |
@@ -261,66 +274,57 @@
             <a href="https://www.instagram.com/ongnuevaesperanza?igsh=NW5nd21wY3ppeDh0" target="_blank"
                 rel="noopener noreferrer">Instragram: @ongnuevaesperanza</a>
         </address>
-        <p><small>© Nueva Esperanza - Todos los derechos reservados</small></p>
+        <h6><small>© Nueva Esperanza - Todos los derechos reservados</small></h6>
     </footer>
-    
+
     <!-- Icono flotante WhatsApp -->
     <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20colaborar%20con%20Nueva%20Esperanza."
-            class="btn-whatsapp d-sm-none"
-            target="_blank" rel="noopener noreferrer"
-            aria-label="WhatsApp" >
+        class="btn-whatsapp d-sm-none" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
 
         <i class="fa-brands fa-whatsapp"></i>
     </a>
     <!-- MODAL NEWSLETTER -->
-     <div class="modal fade" id="newsletterModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+    <div class="modal fade" id="newsletterModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    📩 Sumate a Nueva Esperanza
-                </h5>
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        📩 Sumate a Nueva Esperanza
+                    </h5>
 
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
-            </div>
-
-            <div class="modal-body text-center">
-
-                <p>
-                   📢 Recibí novedades sobre voluntariados,
-                    programas solidarios, talleres y campañas.
-                </p>
-
-                <form id="form-newsletter" novalidate >
-
-                    <input
-                        type="email"
-                        id="email-newsletter"
-                        class="form-control mb-3"
-                        placeholder="Tu correo electrónico">
-
-                    <p id="msg-newsletter"></p>
-
-                    <button
-                        type="submit"
-                        class="btn btn-success">
-                        Quiero recibir novedades!
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
                     </button>
+                </div>
 
-                </form>
+                <div class="modal-body text-center">
+
+                    <p>
+                        📢 Recibí novedades sobre voluntariados,
+                        programas solidarios, talleres y campañas.
+                    </p>
+
+                    <form id="form-newsletter" novalidate>
+
+                        <input type="email" id="email-newsletter" class="form-control mb-3"
+                            placeholder="Tu correo electrónico">
+
+                        <p id="msg-newsletter"></p>
+
+                        <button type="submit" class="btn btn-success">
+                            Quiero recibir novedades!
+                        </button>
+
+                    </form>
+
+                </div>
 
             </div>
-
         </div>
     </div>
-</div>
 
     <!-- JavaScript propio -->
-     <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

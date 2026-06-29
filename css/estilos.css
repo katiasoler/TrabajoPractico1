@@ -5,7 +5,21 @@
     --verde-claro: #4CAF50;
     --verde-clarito: #ace4a7;
     --blanco: #FFFFFF;
+    --body-bg: antiquewhite;
+    --titles: #fff;
+
 }
+
+[data-bs-theme="dark"] {
+    --verde-oscuro: #0B1F17;
+    --verde-medio: #1F4D3A;
+    --verde-claro: #74C69D;
+    --verde-clarito: #40916C;
+    --blanco: #121212;
+    --body-bg: #1a1a1a;
+    --titles: #fff
+}
+
 
 /* Reset */
 * {
@@ -64,6 +78,7 @@ header a:hover {
     font-weight: 600;
     margin: 0 10px;
 }
+
 /* Boton flotante WhatsApp  Boostrap*/
 .btn-whatsapp {
     position: fixed;
@@ -86,6 +101,7 @@ header a:hover {
     color: white;
     transform: scale(1.1);
 }
+
 /*Modal Boostrap*/
 .modal-content {
     border-radius: 20px;
@@ -109,12 +125,14 @@ header a:hover {
     margin: 10px 0;
     font-size: 14px;
 }
+
 #form-newsletter button {
     display: block;
     margin: 0 auto;
     width: 100%;
     max-width: 300px;
 }
+
 /*hero*/
 .hero {
     background-image: url(../iconos/heroimagen.jpeg);
@@ -135,7 +153,7 @@ body {
     width: 95%;
     margin: 1em;
     margin-top: 1em;
-    background-color: antiquewhite;
+    background-color: var(--body-bg);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
 }
@@ -154,6 +172,15 @@ h5,
 h6 {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
+}
+
+em,
+a,
+h5,
+h6,
+label,
+i {
+    color: var(--titles);
 }
 
 
@@ -232,6 +259,7 @@ section,
 }
 
 h1 {
+    color: var(--titles);
     font-size: 3rem;
 }
 
@@ -249,7 +277,7 @@ h3 {
 }
 
 h4 {
-    color: var(--verde-oscuro);
+    color: var(--verde-medio);
     font-size: 1.7em;
     text-align: center;
 }
@@ -352,4 +380,17 @@ td {
 tbody>tr:hover {
     background-color: var(--verde-clarito);
     color: var(--verde-oscuro);
+}
+
+/* Boton cambio de tema */
+.theme-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
 }
