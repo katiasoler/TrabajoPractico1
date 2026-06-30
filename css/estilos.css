@@ -308,13 +308,33 @@ form {
     color: var(--blanco);
     text-align: center;
     justify-content: center;
+    max-width: 100%;
 
+}
+
+.contenedor-formulario {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 1.25em;
+    text-align: left;
+    width: 100%;
+}
+
+.campo label {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    color: var(--blanco);
+    font-weight: 600;
 }
 
 form input,
 form textarea,
 form select {
-    width: 75%;
+    width: 100%;
+    max-width: 100%;
     padding: 1em;
     outline: none;
     font-size: 15px;
@@ -338,6 +358,35 @@ form button {
 form button:hover {
     background-color: var(--verde-clarito);
     color: black;
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 2em;
+    }
+
+    .campo {
+        margin-bottom: 1em;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        padding: 0.95em;
+        font-size: 14px;
+    }
+
+    .error,
+    .exito {
+        font-size: 0.92rem;
+        padding: 10px 10px;
+    }
+
+    form button {
+        width: 100%;
+        max-width: 100%;
+        margin: 0.75em 0 0;
+    }
 }
 
 /* Mapa */
@@ -393,4 +442,43 @@ tbody>tr:hover {
     align-items: center;
 
     padding: 0;
+}
+
+/* Mensajes de error */
+.error {
+    color: #b42318;
+    font-size: 0.95rem;
+    display: block;
+    margin: 0 0 0.75em;
+    padding: 10px 12px;
+    background-color: #fef3f2;
+    border-left: 4px solid #f04438;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+/* Mensaje de éxito */
+.exito {
+    display: block;
+    margin: 1.5em 0 15px;
+    padding: 10px 12px;
+    background-color: #ecfdf3;
+    color: #027a48;
+    border-left: 4px solid #12b76a;
+    border-radius: 6px;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para campos válidos */
+.is-valid {
+    border: 2px solid #12b76a !important;
+}
+
+/* Estilo para campos inválidos */
+.is-invalid {
+    border: 2px solid #f04438 !important;
 }
