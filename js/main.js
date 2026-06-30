@@ -11,39 +11,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 2. CAMBIO DE TEMA (DARK/LIGHT)
-const btnTheme = document.getElementById('themeToggle');
-const html = document.documentElement;
 
-const temaGuardado = localStorage.getItem('tema');
+const btnModo = document.getElementById('btn-modo');
 
-if (temaGuardado) {
-  html.setAttribute('data-bs-theme', temaGuardado);
+    // 1. Al cargar la página, nos fijamos si el usuario ya había elegido el modo oscuro antes
+    if (localStorage.getItem('modo') === 'oscuro') {
+        document.body.classList.add('modo-oscuro');
+        if (btnModo) btnModo.textContent = '☀️'; // Si está oscuro, ponemos el sol
+    } else {
+        if (btnModo) btnModo.textContent = '🌙'; // Si está claro, ponemos la luna
+    }
 
-  if (temaGuardado === 'dark') {
-    btnTheme.innerHTML =
-      '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>';
-  }
-}
+    // 2. Escuchamos el clic en el botón para cambiar de modo y guardarlo en la memoria
+    if (btnModo) {
+        btnModo.addEventListener('click', () => {
+            document.body.classList.toggle('modo-oscuro');
 
-btnTheme.addEventListener('click', () => {
-  const temaActual = html.getAttribute('data-bs-theme');
-
-  if (temaActual === 'dark') {
-    html.setAttribute('data-bs-theme', 'light');
-
-    localStorage.setItem('tema', 'light');
-
-    btnTheme.innerHTML =
-      '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008" /></svg>';
-  } else {
-    html.setAttribute('data-bs-theme', 'dark');
-
-    localStorage.setItem('tema', 'dark');
-
-    btnTheme.innerHTML =
-      '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>';
-  }
-});
+            // Nos fijamos si después del clic quedó la clase activada
+            if (document.body.classList.contains('modo-oscuro')) {
+                btnModo.textContent = '☀️';
+                localStorage.setItem('modo', 'oscuro'); // Guardamos "oscuro" en la memoria
+            } else {
+                btnModo.textContent = '🌙';
+                localStorage.setItem('modo', 'claro');  // Guardamos "claro" en la memoria
+            }
+        });
+    }
 
 // 3. VALIDACIÓN DE NEWSLETTER
 
