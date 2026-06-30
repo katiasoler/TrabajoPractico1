@@ -108,45 +108,72 @@
                 nuestras actividades y campañas, te invitamos a llenar el formulario
                 de contacto a continuación.</p>
         </section>
-        <form>
-            <i class="fa-solid fa-user"></i>
-            <label for="nombre">Escribe tu nombre completo:</label> <br>
-            <input type="text" id="nombre" required placeholder="Juan Perez">
-            <br><br>
-            <i class="fa-solid fa-envelope"></i>
-            <label for="email">Escribe tu email:</label> <br>
-            <input type="email" id="email" required placeholder="juan.perez@example.com">
-            <br><br>
-            <i class="fa-solid fa-phone"></i>
-            <label for="telefono">Escribe tu teléfono:</label> <br>
-            <input type="tel" id="telefono" placeholder="123-456-7890">
-            <br><br>
-            <i class="fa-solid fa-globe"></i>
-            <label for="pais">País:</label> <br>
-            <select id="pais">
-                <option value="">Selecciona tu país</option>
-                <option value="argentina">Argentina</option>
-                <option value="brasil">Brasil</option>
-                <option value="chile">Chile</option>
-                <option value="uruguay">Uruguay</option>
-                <option value="paraguay">Paraguay</option>
-            </select>
-            <br><br>
-            <i class="fa-solid fa-birthday-cake"></i>
-            <label for="fecha">Tu fecha de nacimiento:</label> <br>
-            <input type="date" id="fecha" value="" min="1950-01-01" max="2030-12-31">
-            <br><br>
-            <i class="fa-solid fa-pen-to-square"></i>
-            <label for="asunto">Asunto:</label> <br>
-            <input type="text" id="asunto" required placeholder="Escribe el asunto">
-            <br><br>
-            <i class="fa-solid fa-message"></i>
-            <label for="mensaje">Mensaje:</label> <br>
-            <textarea id="mensaje" rows="4" cols="50" required placeholder="Escribe tu mensaje aquí..."></textarea>
-            <br><br>
-            <button type="submit" class="btn btn-success btn-lg px-5">Enviar</button>
-            <button type="reset" class="btn btn-success btn-lg px-5">Limpiar campos</button>
-        </form>
+        <div class="contenedor-formulario">
+            <h2 class="text-center mb-4">Formulario de Contacto</h2>
+            <!-- FORMULARIO - novalidate evita que el navegador muestre sus mensajes automáticos y usamos JS personalizado -->
+            <form id="form-contact" novalidate>
+                <!-- NOMBRE -->
+                <div class="campo">
+                    <i class="fa-solid fa-user"></i>
+                    <label for="nombre" class="form-label">Nombre completo:</label>
+                    <input type="text" id="nombre" class="form-control" minLength="3" placeholder="Juan Pérez">
+                    <!-- Mensaje de error -->
+                    <p class="error" id="errorNombre" hidden>Debes completar este campo.</p>
+                </div>
+                <!-- EMAIL -->
+                <div class="campo">
+                    <i class="fa-solid fa-envelope"></i>
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" class="form-control" minLength="8" placeholder="juan@email.com">
+                    <p class="error" id="errorEmail" hidden>Ingresa un email válido.</p>
+                </div>
+                <!-- TELÉFONO -->
+                <div class="campo">
+                    <i class="fa-solid fa-phone"></i>
+                    <label for="telefono" class="form-label">Teléfono:</label>
+                    <input type="tel" id="telefono" class="form-control" minLength="6" placeholder="123456789 o 1234-5678">
+                    <p class="error" id="errorTelefono" hidden>El teléfono debe contener solo números y/o guiones, y al menos 8 dígitos.</p>
+                </div>
+                <!-- PAÍS -->
+                <div class="campo">
+                    <i class="fa-solid fa-globe"></i>
+                    <label for="pais" class="form-label">País:</label>
+                    <select id="pais" class="form-select">
+                        <option value="">Selecciona tu país</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="paraguay">Paraguay</option>
+                    </select>
+                </div>
+                <!-- FECHA -->
+                <div class="campo">
+                    <i class="fa-solid fa-birthday-cake"></i>
+                    <label for="fecha" class="form-label">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" class="form-control" min="1950-01-01" max="2030-12-31">
+                </div>
+                <!-- ASUNTO -->
+                <div class="campo">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <label for="asunto" class="form-label">Asunto:</label>
+                    <input type="text" id="asunto" class="form-control" minLength="5" placeholder="Escribe el asunto de tu mensaje">
+                    <p class="error" id="errorAsunto" hidden>El asunto es obligatorio.</p>
+                </div>
+                <!-- MENSAJE -->
+                <div class="campo">
+                    <i class="fa-solid fa-message"></i>
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" rows="4" class="form-control" minLength="10" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <p class="error" id="errorMensaje" hidden>El mensaje debe tener al menos 10 caracteres.</p>
+                </div>
+                <!-- BOTONES -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success px-5">&#128233;Enviar</button>
+                    <button type="reset" class="btn btn-secondary px-5">&#128163;Limpiar</button>
+                </div>
+            </form>
+        </div>
         <br>
         <aside class="ubicacion">
             <h2 id="ubicacion">Si quieres acercarte a nosotros, puedes encontrarnos en nuestra sede central:</h2>
