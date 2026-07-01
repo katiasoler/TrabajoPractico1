@@ -312,6 +312,19 @@ video {
     margin-top: 1em;
 }
 
+/*imagen carrousel*/
+.carousel-inner{
+    border-radius: 12px;
+}
+
+/*imagenes*/
+
+#nuestro-personal img {
+    border-radius: 100%;
+}
+
+
+
 /* Formulario */
 form {
     background-color: var(--verde-oscuro);
