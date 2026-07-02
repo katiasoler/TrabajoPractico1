@@ -15,8 +15,9 @@ El sitio está compuesto por las siguientes páginas:
 
 ## 🛠️ Tecnologías utilizadas
 - HTML5
-- CSS pernolizado 
+- CSS personalizado 
 - BOOTSTRAP 
+- JavaScript
 
 ---
 
@@ -29,7 +30,7 @@ El sitio está compuesto por las siguientes páginas:
 ---
 
 ## 🎯 Objetivo del trabajo
-Aplicar los conocimientos adquiridos en la materia **Taller de Lenguaje y Marcado**, desarrollando un sitio web correctamente estructurado y utilizando etiquetas semánticas de HTML.
+Aplicar los conocimientos adquiridos en la materia **Taller de Lenguaje y Marcado**, desarrollando un sitio web correctamente estructurado.
 
 ---
 
@@ -39,4 +40,4 @@ Este trabajo tiene fines educativos y simula una ONG real, con el objetivo de ge
 ---
 
 ## 🚧 Estado del proyecto
-Finalizado. Se aplicaron todos los conocimientos adquiridos en la materia con html y css.
+Finalizado. Se aplicaron todos los conocimientos adquiridos en la materia con HTML, CSS, Boostrap y JavaScript.
